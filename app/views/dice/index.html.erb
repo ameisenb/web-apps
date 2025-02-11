@@ -1,0 +1,28 @@
+<% 
+die1 = rand(1..6)
+die2 = rand(1..6)
+total = die1 + die2
+%>
+
+<h1> You rolled a two six-sided dice!</h1>
+<h2> Here are the results!</h2>
+
+<p>
+Roll 1: <%= die1%>
+</p>
+<p>
+Roll 2: <%= die2%>
+</p>
+
+<p>
+  <img src="/images/dice/<%=die1%>.svg" alt="">
+  <img src="/images/dice/<%=die2%>.svg" alt="">
+</p>
+
+<p>
+Total: <%=total%>
+</p>
+
+<h3>
+<a href="/dice">Roll again!</a>
+</h3>
